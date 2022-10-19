@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
         console.log(result);
         if(result=="Admin sucessfully login"){
             sessionStorage.setItem("userDetails",login.emailid);
-            this.router.navigate(["adminHome"])
+            this.router.navigate(["adminHome/findAllProduct"])
         }else if(result=="User successfully login"){
           sessionStorage.setItem("userDetails",login.emailid);
           this.router.navigate(["userHome"])

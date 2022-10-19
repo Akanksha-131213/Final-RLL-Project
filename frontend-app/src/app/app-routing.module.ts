@@ -17,9 +17,10 @@ import { ViewuserComponent } from './viewuser/viewuser.component';
 const routes: Routes = [
   {path:"cart",component:CartComponent},
   {path:"changePassword",component:ChangePasswordComponent},
-  {path:"viewuser",component:ViewuserComponent},
+  
   {path:"login",component:LoginComponent},
   {path:"adminHome",component:AdmindashboardComponent,children:[
+    {path:"viewuser",component:ViewuserComponent},
     {path:"addProduct",component:AddProductComponent},
     {path:"findAllProduct",component:AdminProductRetrieveComponent}
     
@@ -31,7 +32,7 @@ const routes: Routes = [
   {path:"checktq",component:ChecktqComponent},
   
   {path:"signUp",component:SignupComponent},
-  {path:"",redirectTo:"login",pathMatch:"full"},
+  {path:"",redirectTo:"home",pathMatch:"full"},
   {path:"home",component:HomepageComponent,pathMatch:"full"}
 ];
 
