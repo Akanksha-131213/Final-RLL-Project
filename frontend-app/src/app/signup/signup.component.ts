@@ -12,7 +12,7 @@ export class SignupComponent implements OnInit {
   loginRef = new FormGroup({
     emailid:new FormControl(null,[Validators.required,Validators.email]),
     password:new FormControl(null,Validators.required),
-    typeOfUser:new FormControl()
+    typeOfUser:new FormControl("user")
   });
   msg:string=""
 
